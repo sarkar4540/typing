@@ -2,6 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Constants from 'expo-constants';
+import { Platform } from 'react-native';
+
 function randomAlphabet() {
   return String.fromCharCode(Math.floor(Math.random() * (90 - 65 + 1)) + 65)
 }
