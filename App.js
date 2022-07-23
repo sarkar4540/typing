@@ -79,7 +79,7 @@ function Game(props) {
           setSuccess(false);
         }} title="Reset" color="#f44" />
       </View>
-      <StatusBar style="auto" />
+      <StatusBar style='light' />
     </View>
   );
 }

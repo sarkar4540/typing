@@ -29,6 +29,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "A typing game."
+    "description": "A typing game.",
+    "githubUrl": "https://github.com/sarkar4540/typing"
   }
 }
