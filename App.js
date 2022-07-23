@@ -32,8 +32,8 @@ function Game(props) {
         <TextInput
           style={styles.textInput}
           value={typedString}
-          secureTextEntry={Platform.OS === 'ios' ? false : true}
-          keyboardType={Platform.OS === 'ios' ? null : 'visible-password'}
+          secureTextEntry={Platform.OS === 'android' ? true:false}
+          keyboardType={Platform.OS === 'android' ? 'visible-password':null}
           autoCapitalize="characters"
           onChangeText={(text) => {
             if (!isTiming) {
@@ -46,7 +46,7 @@ function Game(props) {
               setSuccess(false);
             }
             else {
-              //text = text.toUpperCase()
+              text = text.toUpperCase()
               if (text.length >= 20) {
                 clearInterval(timer);
                 setIsTiming(false);
